@@ -45,5 +45,6 @@ public class WildCardCharMatching {
 									// 'c'
 		test("*c*d", "abcd"); // Yes
 		test("*?c*d", "abcd"); // Yes
+		test("*ba*ab", "baaabab"); // Yes
 	}
 }

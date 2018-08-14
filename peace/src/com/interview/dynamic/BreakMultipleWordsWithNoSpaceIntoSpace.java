@@ -189,9 +189,11 @@ public class BreakMultipleWordsWithNoSpaceIntoSpace {
         dictionary.add("had");
         dictionary.add("play");
         dictionary.add("to");
+        dictionary.add("am");
+        dictionary.add("ace");        
         String str = "Ihadliketoplay";
         BreakMultipleWordsWithNoSpaceIntoSpace bmw = new BreakMultipleWordsWithNoSpaceIntoSpace();
-        String result1 = bmw.breakWordDP(str, dictionary);
+        String result1 = bmw.breakWordDP("Iamace", dictionary);
         
         System.out.print(result1);
     }
