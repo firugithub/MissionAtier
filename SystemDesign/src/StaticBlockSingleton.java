@@ -1,0 +1,27 @@
+class StaticBlockSingleton {
+
+	private static StaticBlockSingleton instance;
+
+	private StaticBlockSingleton() {
+		// throw new UncheckedIOException(new IOException(""));
+	}
+
+	// static block initialization for exception handling
+	static {
+		try {
+			instance = new StaticBlockSingleton();
+		} catch (Exception e) {
+			throw new RuntimeException("Exception occured in creating singleton instance");
+		}
+	}
+
+	public static StaticBlockSingleton getInstance() {
+		return instance;
+	}
+}
+
+class Test {
+	public static void main(String args[]) {
+		StaticBlockSingleton.getInstance();
+	}
+}
