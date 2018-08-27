@@ -1,9 +1,12 @@
+import java.io.IOException;
+import java.io.UncheckedIOException;
+
 class StaticBlockSingleton {
 
 	private static StaticBlockSingleton instance;
 
 	private StaticBlockSingleton() {
-		// throw new UncheckedIOException(new IOException(""));
+		throw new UncheckedIOException(new IOException(""));
 	}
 
 	// static block initialization for exception handling

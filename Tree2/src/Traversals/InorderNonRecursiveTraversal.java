@@ -47,7 +47,7 @@ public class InorderNonRecursiveTraversal {
 		if (root == null) {
 			return;
 		}
-		Stack stack = new Stack();
+		Stack<Node> stack = new Stack<Node>();
 		while (root != null) {
 			stack.push(root);
 			root = root.leftChild;

@@ -1,8 +1,12 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.PriorityQueue;
 
 public class MergeKSortedArrays {
 
-	public static void main(String[] args) {
+	public static <E> void main(String[] args) {
 		int arr[] = { 1, 4, 7, 10, 13, 16 };
 		int arr2[] = { 2, 5, 8, 11, 14, 17 };
 		int arr3[] = { 3, 6, 9, 12, 15 };
