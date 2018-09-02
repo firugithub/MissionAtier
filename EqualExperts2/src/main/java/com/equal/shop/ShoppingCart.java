@@ -52,4 +52,12 @@ public class ShoppingCart {
 		return items.size() == 0;
 	}
 
+	/*
+	 * Returns the total addition of the quantity of all product types present
+	 * in the cart.
+	 */
+	public int getTotalCartQuantity() {
+		return items.values().stream().mapToInt(Integer::intValue).sum();
+	}
+
 }

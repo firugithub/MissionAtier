@@ -1,3 +1,4 @@
+package com.equal.test.shop;
 import java.util.ArrayList;
 import java.util.List;
 

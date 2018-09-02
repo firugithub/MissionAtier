@@ -49,7 +49,8 @@ class MinHeap {
 	}
 
 	void insert(int data) {
-		int nextPos = this.count;
+		this.count++;
+		int nextPos = this.count - 1;
 		while (nextPos >= 0 && data < this.arr[(nextPos - 1) / 2]) {
 			this.arr[nextPos] = this.arr[(nextPos - 1) / 2];
 			nextPos = (nextPos - 1) / 2;
@@ -62,8 +63,9 @@ class MinHeap {
 class TestHeap {
 	public static void main(String args[]) {
 		int arr[] = { 1, 2, 4, 5, 7, 9, 10, 12 };
-		MinHeap heap = new MinHeap(20, 0);
+		MinHeap heap = new MinHeap(8, 0);
 		System.arraycopy(arr, 0, heap.arr, 0, arr.length);
+		heap.count = heap.arr.length;
 		for (int i = (heap.count - 2) / 2; i >= 0; i--) {
 			heap.percolateDown(i);
 		}

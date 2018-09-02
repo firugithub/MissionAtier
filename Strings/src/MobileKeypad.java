@@ -47,7 +47,7 @@ public class MobileKeypad {
 		hashTable.put(8, "tuv");
 		hashTable.put(9, "wxyz");
 
-		int number[] = {1, 2, 3 };
+		int number[] = {4, 2, 3 };
 		int n = number.length;
 		printWords(number, n);
 	}

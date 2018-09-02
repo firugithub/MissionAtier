@@ -4,7 +4,12 @@ public class AllPermutationsWithRepetitions {
 	public static void main(String[] args) {
 		char arr[] = "ABC".toCharArray();
 		// allLexicographic(arr, arr.length, "");
-		allLexicographic(arr);
+		// allLexicographic(arr);
+
+		String str = "ABC";
+		char[] input = str.toCharArray();
+		char[] output = input.clone();
+		printPermute(output, input, 0);
 	}
 
 	// public static void recur(char arr[], int n, String s) {
@@ -52,6 +57,20 @@ public class AllPermutationsWithRepetitions {
 
 		// Now print all permutaions
 		allLexicographicRecur(str, data, len - 1, 0);
+
+	}
+
+	private static void printPermute(char[] output, char[] input, int index) {
+
+		if (index == input.length) {
+			System.out.println(output);
+			return;
+		}
+
+		for (int i = 0; i < input.length; i++) {
+			output[index] = input[i];
+			printPermute(output, input, index + 1);
+		}
 
 	}
 }
