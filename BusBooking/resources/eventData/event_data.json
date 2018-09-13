@@ -1,0 +1,8 @@
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid1","eventType":"ENTER_TRIP_DETAIL"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid1","eventType":"CLICK_TO_PAY_TRIP"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid2","eventType":"ENTER_TRIP_DETAIL"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid2","eventType":"CLICK_TO_PAY_TRIP"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid1","eventType":"SUBMIT_PAYMENT"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid3","eventType":"CLICK_TO_PAY_TRIP"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid4","eventType":"CLICK_TO_PAY_TRIP"}
+{"activityDate":"13/09/2018 14:53:21+0530","userId":"userid2","eventType":"SUBMIT_PAYMENT"}
